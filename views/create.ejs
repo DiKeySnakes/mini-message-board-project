@@ -1,0 +1,19 @@
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="create-message content">
+      <form action="/messages" method="POST">
+        <label for="user">User name:</label>
+        <input type="text" id="user" name="user" required />
+        <label for="text">Message text:</label>
+        <textarea id="text" name="text" required></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>
